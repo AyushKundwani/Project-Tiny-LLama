@@ -14,7 +14,7 @@ import "./App.css";
 // ─────────────────────────────────────────────
 // What: The base URL of our FastAPI backend.
 // Why:  If we change the port, we only update it here.
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://project-tiny-llama.onrender.com";
 
 // ─────────────────────────────────────────────
 // Suggested Starter Questions
