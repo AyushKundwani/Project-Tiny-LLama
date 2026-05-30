@@ -3,6 +3,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from groq import Groq
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = FastAPI(title="Finance Q&A Chatbot API")
 
@@ -15,7 +18,7 @@ app.add_middleware(
 )
 
 # Paste your Groq API key here
-client = Groq(api_key="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")
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 print("✅ Groq model ready!")
 
 class ChatRequest(BaseModel):
