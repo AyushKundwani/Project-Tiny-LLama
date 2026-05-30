@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.bin
+*.pt
+*.safetensors
+finance_adapter/
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
